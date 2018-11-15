@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.AccessTime.GUI.Controllers.ControllerTwoWin">
+   <children>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Сигнал подан в ">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text fx:id="timeSignal" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="376.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="322.0" prefWidth="472.0">
+               <children>
+                  <TableView fx:id="tableTwo" prefHeight="341.0" prefWidth="461.0">
+                    <columns>
+                      <TableColumn fx:id="numberPP" prefWidth="54.0" text="№ п/п" />
+                      <TableColumn fx:id="FIO" prefWidth="261.0" text="ФИО" />
+                        <TableColumn fx:id="timeArrival" prefWidth="145.0" text="Время прибытия" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <HBox prefHeight="45.0" prefWidth="600.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Текущее время:">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="timeNowShow" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Процент прибытия:">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="percents" strokeType="OUTSIDE" strokeWidth="0.0" text="Процент">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="370.0" prefWidth="146.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="numberState" prefHeight="0.0" prefWidth="119.0" text="Введите номер" />
+                  <Button fx:id="bClik" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Отметить" textAlignment="CENTER" />
+                  <Button fx:id="bPrint" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Печать" textAlignment="CENTER" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <Button fx:id="bExitTwoWin" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Выход" textAlignment="CENTER" onAction="#exitTwoWin"/>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

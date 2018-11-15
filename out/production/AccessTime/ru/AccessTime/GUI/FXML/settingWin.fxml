@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.AccessTime.GUI.Controllers.ControllerSettingWin">
+   <children>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Уточнено по состоянию на:">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text fx:id="dateUpdateShow" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="376.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="322.0" prefWidth="472.0">
+               <children>
+                  <TableView fx:id="tableSetting" prefHeight="341.0" prefWidth="461.0">
+                    <columns>
+                      <TableColumn fx:id="tableSettingPP" prefWidth="54.0" text="№ п/п" />
+                      <TableColumn fx:id="settingFIO" prefWidth="261.0" text="ФИО" />
+                        <TableColumn fx:id="settingCondition" prefWidth="145.0" text="Состояние">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu></TableColumn>
+                    </columns>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <HBox prefHeight="45.0" prefWidth="600.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Текущее время:">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="dateNow" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="370.0" prefWidth="146.0" spacing="10.0">
+               <children>
+                  <Button fx:id="bSaveSetting" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Сохранить" textAlignment="CENTER" />
+                  <Button fx:id="bNewServicemanWin" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="В/служащие" textAlignment="CENTER" onAction="#newServicemanWin" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <Button fx:id="bExitSettingWin" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Выход" textAlignment="CENTER" onAction="#exitSetting"/>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
