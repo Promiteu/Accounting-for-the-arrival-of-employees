@@ -8,7 +8,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import ru.AccessTime.GUI.WorkController;
 
-public class ControllerTwoWin {
+public class ControllerTwoWin  {
     public WorkController workController;
     @FXML
     private Text timeSignal;
@@ -45,9 +45,23 @@ public class ControllerTwoWin {
 
     public void exitTwoWin() {
         workController.getStageTwoWin().close();
+
     }
 
     public void setWorkController(WorkController workController) {
         this.workController = workController;
+    }
+
+    public Button getbClik() {
+        return bClik;
+    }
+    public Button getbPrint() {
+        return bPrint;
+    }
+    public Button getbExitTwoWin() {
+        return bExitTwoWin;
+    }
+    public Text getTimeNowShow() {
+        return timeNowShow;
     }
 }

@@ -33,8 +33,8 @@ public class Main extends Application{
         primaryStage.setTitle("Контроль прибытия сотрудников v1.0");
         primaryStage.setScene(new Scene(rootOneWin));
         ControllerOneWin controllerOneWin = loaderOneWin.getController();
-        controllerOneWin.workController.eventOneWin();
-
+        controllerOneWin.workController.inicializOneWin();
+        primaryStage.setOnCloseRequest(event -> controllerOneWin.workController.getShowTimeNow().stopShowTime());
         primaryStage.show();
 
     }

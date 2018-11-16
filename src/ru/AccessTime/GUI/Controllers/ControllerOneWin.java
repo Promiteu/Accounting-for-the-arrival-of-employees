@@ -10,7 +10,7 @@ import ru.AccessTime.GUI.WorkController;
 
 public class ControllerOneWin {
     public WorkController workController = new WorkController(this);
-    Stage myStage;
+    public Stage myStage;
 
     @FXML
     private Text timeNowShow;
@@ -50,20 +50,38 @@ public class ControllerOneWin {
 
 
 
-    @FXML private void startTwoWin() {
+    @FXML public void startTwoWin() {
         workController.showTwoWin();
     }
-    @FXML private void openP() {
+    @FXML public void openP() {
 
 
     }
-    @FXML private void showSettingWin() {
+    @FXML public void showSettingWin() {
         workController.showSettingWin();
     }
-    @FXML private void exitOneWin() {
-       myStage = (Stage) bStartTwoWin.getScene().getWindow();
+    @FXML public void exitOneWin() {
+       myStage = (Stage) bExitOne.getScene().getWindow();
        myStage.close();
-
+       workController.getShowTimeNow().stopShowTime();
     }
 
+    public Button getbStartTwoWin() {
+        return bStartTwoWin;
+    }
+    public Button getbOpenP() {
+        return bOpenP;
+    }
+    public Button getbShowSettingWin() {
+        return bShowSettingWin;
+    }
+    public Button getbExitOne() {
+        return bExitOne;
+    }
+    public Text getTimeNowShow() {
+        return timeNowShow;
+    }
+    public TextField getTimeSignal() {
+        return timeSignal;
+    }
 }

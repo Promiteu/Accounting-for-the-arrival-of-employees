@@ -54,7 +54,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
                         </Text>
-                        <Text fx:id="dateNow" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
+                        <Text fx:id="timeNowShow" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>

@@ -3,6 +3,8 @@ package ru.AccessTime.GUI;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import ru.AccessTime.GUI.Controllers.ControllerNewServiceman;
 import ru.AccessTime.GUI.Controllers.ControllerOneWin;
@@ -10,7 +12,6 @@ import ru.AccessTime.GUI.Controllers.ControllerSettingWin;
 import ru.AccessTime.GUI.Controllers.ControllerTwoWin;
 
 import java.io.IOException;
-import java.util.Date;
 
 public class WorkController {
     private ControllerOneWin controllerOneWin;
@@ -18,6 +19,7 @@ public class WorkController {
     private ControllerSettingWin controllerSettingWin;
     private ControllerNewServiceman controllerNewServiceman;
 
+    private ShowTimeNow showTimeNow = new ShowTimeNow();
 
     private Stage stageTwoWin;
     private Parent rootTwoWin;
@@ -48,9 +50,10 @@ public class WorkController {
         controllerTwoWin = loaderTwoWin.getController();
         controllerTwoWin.setWorkController(this);
         stageTwoWin.setTitle("Учет прибытия");
+        stageTwoWin.initModality(Modality.APPLICATION_MODAL);
         stageTwoWin.setScene(new Scene(rootTwoWin));
         stageTwoWin.show();
-
+        showTimeNow.startShowTime(controllerTwoWin.getTimeNowShow());
 
     }
     public void showSettingWin() {
@@ -67,7 +70,8 @@ public class WorkController {
         stageSettingWin.setTitle("Уточнение");
         stageSettingWin.setScene(new Scene(rootSettingWin));
         stageSettingWin.show();
-        showTimeNow();
+        showTimeNow.startShowTime(controllerSettingWin.getTimeNowShow());
+
 
 
     }
@@ -82,35 +86,39 @@ public class WorkController {
         }
         controllerNewServiceman = loaderNewServiceManWin.getController();
         controllerNewServiceman.setWorkController(this);
-        stageSettingWin.setTitle("Уточнение");
-        stageSettingWin.setScene(new Scene(rootNewServiceman));
-        stageSettingWin.show();
+        stageNewServiceman.setTitle("Уточнение");
+        stageNewServiceman.initModality(Modality.APPLICATION_MODAL);
+        stageNewServiceman.setScene(new Scene(rootNewServiceman));
+        stageNewServiceman.show();
+
     }
 
-    public void showTimeNow() {
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (true) {
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    Date dateNow = new Date();
-                    String string = dateNow.toString();
-                    controllerSettingWin.dateNow.setText(string);
-                    System.out.println(dateNow);
-                }
+    public void inicializOneWin () {
+
+        showTimeNow.startShowTime(controllerOneWin.getTimeNowShow());
+        controllerOneWin.getbStartTwoWin().setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                showTwoWin();
             }
         });
-
-        thread.start();
-        thread.setDaemon(true);
+        controllerOneWin.getbOpenP();                                           //прописать после создания метода ОТКРЫТЬ
+        controllerOneWin.getbShowSettingWin().setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                showSettingWin();
+            }
+        });
+        controllerOneWin.getbExitOne().setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                controllerOneWin.exitOneWin();
+                }
+        });
+        controllerOneWin.getTimeSignal().setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {showTwoWin();}
+        });
     }
 
-    public void eventOneWin () {
-
+    public ShowTimeNow getShowTimeNow() {
+        return showTimeNow;
     }
 
     public WorkController(ControllerOneWin controllerOneWin) {

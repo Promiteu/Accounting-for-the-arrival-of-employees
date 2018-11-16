@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java" description="    private ControllerSettingWin controllerSetting..." line="27" />
+    <bookmark url="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java" description="    private ControllerSettingWin controllerSetting..." line="28" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="427f4f1f-829b-49ac-9ea5-c991828957e9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/ShowTime.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/AccessTime/ShowTime.java" afterPath="" />
+    <list default="true" id="427f4f1f-829b-49ac-9ea5-c991828957e9" name="Default" comment="16.11.2018 17.00">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerOneWin.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerOneWin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerSettingWin.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerSettingWin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerTwoWin.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerTwoWin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/WorkController.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/WorkController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/Main.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/Serviceman.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/Serviceman.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/WorkBD/WorkBase.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/WorkBD/WorkBase.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/oneWin.fxml" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/oneWin.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/settingWin.fxml" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/settingWin.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerOneWin.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerOneWin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerSettingWin.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerSettingWin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerTwoWin.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerTwoWin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/oneWin.fxml" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/oneWin.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/settingWin.fxml" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/settingWin.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/Main.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/Serviceman.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/Serviceman.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/WorkBD/WorkBase.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/WorkBD/WorkBase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/AccessTime/ShowTime.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTime.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTime.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTimeNow.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +37,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+            <state relative-caret-position="330">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,24 +49,32 @@
       <file leaf-file-name="WorkController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="98" column="35" lean-forward="false" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#showTwoWin#0;class#WorkController#0" expanded="false" />
+                <element signature="method#showSettingWin#0;class#WorkController#0" expanded="false" />
                 <element signature="method#showNewServiseman#0;class#WorkController#0" expanded="false" />
+                <element signature="method#inicializOneWin#0;class#WorkController#0" expanded="false" />
+                <element signature="e#3641#3757#0" expanded="false" />
+                <element signature="e#3944#4064#0" expanded="false" />
+                <element signature="e#4122#4259#0" expanded="false" />
+                <element signature="e#4319#4405#0" expanded="false" />
                 <element signature="method#WorkController#0;class#WorkController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowTime.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTime.java">
+      <file leaf-file-name="ShowTimeNow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTimeNow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="300">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="method#startShowTime#0;class#ShowTimeNow#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,12 +82,11 @@
       <file leaf-file-name="ControllerOneWin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerOneWin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="111">
+              <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#openP#0;class#ControllerOneWin#0" expanded="false" />
-                <element signature="e#1144#1145#0" expanded="true" />
                 <element signature="method#exitOneWin#0;class#ControllerOneWin#0" expanded="false" />
               </folding>
             </state>
@@ -93,9 +96,11 @@
       <file leaf-file-name="ControllerTwoWin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerTwoWin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
-              <folding />
+            <state relative-caret-position="500">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding>
+                <element signature="method#exitTwoWin#0;class#ControllerTwoWin#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,11 +108,13 @@
       <file leaf-file-name="ControllerSettingWin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerSettingWin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#bSaveSetting#0;class#ControllerSettingWin#0" expanded="false" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="method#exitSetting#0;class#ControllerSettingWin#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -116,10 +123,9 @@
       <file leaf-file-name="ControllerNewServiceman.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="39" column="64" lean-forward="false" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+            <state relative-caret-position="120">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#exitNewServicemanWin#0;class#ControllerNewServiceman#0" expanded="false" />
               </folding>
             </state>
@@ -132,6 +138,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -139,7 +146,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="version_1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -174,13 +181,18 @@
         <option value="C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/ActionEvent.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/EventTarget.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/Event.java" />
+        <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTime.java" />
+        <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTimeNow2.java" />
+        <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers.java" />
+        <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/MyControllers.java" />
         <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/oneWin.fxml" />
         <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerTwoWin.java" />
-        <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerSettingWin.java" />
-        <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.java" />
-        <option value="$PROJECT_DIR$/src/ru/AccessTime/Main.java" />
         <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerOneWin.java" />
         <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java" />
+        <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.java" />
+        <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerSettingWin.java" />
+        <option value="$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTimeNow.java" />
+        <option value="$PROJECT_DIR$/src/ru/AccessTime/Main.java" />
       </list>
     </option>
   </component>
@@ -206,7 +218,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,12 +246,18 @@
               <item name="AccessTime" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AccessTime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AccessTime" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AccessTime" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="FXML" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -321,6 +341,14 @@
       <option name="presentableId" value="Default" />
       <updated>1541088671450</updated>
     </task>
+    <task id="LOCAL-00001" summary="16.11.2018 13.00">
+      <created>1542364967603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542364967604</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -334,9 +362,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.50213444" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33001107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3311185" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -385,113 +413,60 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="16.11.2018 13.00" />
+    <option name="LAST_COMMIT_MESSAGE" value="16.11.2018 13.00" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/EventHandler.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/ShowTime.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/stage/Modality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="1786" column="19" lean-forward="false" selection-start-line="1786" selection-start-column="19" selection-end-line="1786" selection-end-column="19" />
-          <folding>
-            <element signature="docComment;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#Element#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#ValueElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#InstanceDeclarationElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#UnknownTypeElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#IncludeElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="method#injectFields#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#ReferenceElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#CopyElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#RootElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#PropertyElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#UnknownStaticPropertyElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#ScriptElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#DefineElement#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#Attribute#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#ControllerMethodEventHandler#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#ScriptEventHandler#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#ObservableListChangeAdapter#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#ObservableMapChangeAdapter#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#ObservableSetChangeAdapter#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#PropertyChangeAdapter#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="class#MethodHandler#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="docComment;field#DEFAULT_CHARSET_NAME#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="docComment;field#LANGUAGE_PROCESSING_INSTRUCTION#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="docComment;field#IMPORT_PROCESSING_INSTRUCTION#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="docComment;field#FX_NAMESPACE_PREFIX#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="docComment;field#FX_NAMESPACE_VERSION#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="initializer##0;class#FXMLLoader#0" expanded="false" />
-            <element signature="docComment;method#FXMLLoader#0;class#FXMLLoader#0" expanded="false" />
-            <element signature="docComment;method#FXMLLoader#1;class#FXMLLoader#0" expanded="false" />
-            <element signature="docComment;method#FXMLLoader#2;class#FXMLLoader#0" expanded="false" />
-            <element signature="docComment;method#FXMLLoader#3;class#FXMLLoader#0" expanded="false" />
-            <element signature="method#FXMLLoader#3;class#FXMLLoader#0" expanded="false" />
-            <element signature="e#83880#83881#0" expanded="false" />
-            <element signature="e#83916#83917#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="3366" column="13" lean-forward="false" selection-start-line="3366" selection-start-column="13" selection-end-line="3366" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/stage/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="169" column="13" lean-forward="false" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/EventListner.java" />
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/twoWin.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="77" column="177" lean-forward="false" selection-start-line="77" selection-start-column="177" selection-end-line="77" selection-end-column="177" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/settingWin.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/settingWin.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="71" column="204" lean-forward="false" selection-start-line="71" selection-start-column="204" selection-end-line="71" selection-end-column="204" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/newServiceman.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/newServiceman.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="48" column="210" lean-forward="false" selection-start-line="48" selection-start-column="210" selection-end-line="48" selection-end-column="210" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/Main.java">
@@ -508,7 +483,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="method#exitTwoWin#0;class#ControllerTwoWin#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -519,6 +496,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#bSaveSetting#0;class#ControllerSettingWin#0" expanded="false" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="method#exitSetting#0;class#ControllerSettingWin#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -528,7 +507,7 @@
         <state relative-caret-position="647">
           <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#exitNewServicemanWin#0;class#ControllerNewServiceman#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -540,21 +519,27 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#showTwoWin#0;class#WorkController#0" expanded="false" />
+            <element signature="method#showSettingWin#0;class#WorkController#0" expanded="false" />
             <element signature="method#showNewServiseman#0;class#WorkController#0" expanded="false" />
+            <element signature="method#inicializOneWin#0;class#WorkController#0" expanded="false" />
+            <element signature="e#3641#3757#0" expanded="false" />
+            <element signature="e#3944#4064#0" expanded="false" />
+            <element signature="e#4122#4259#0" expanded="false" />
+            <element signature="e#4319#4405#0" expanded="false" />
             <element signature="method#WorkController#0;class#WorkController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/oneWin.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="74" column="171" lean-forward="true" selection-start-line="74" selection-start-column="171" selection-end-line="74" selection-end-column="171" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerOneWin.java">
@@ -564,7 +549,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#openP#0;class#ControllerOneWin#0" expanded="false" />
-            <element signature="e#1144#1145#0" expanded="true" />
             <element signature="method#exitOneWin#0;class#ControllerOneWin#0" expanded="false" />
           </folding>
         </state>
@@ -672,23 +656,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/EventListner.java" />
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/newServiceman.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="48" column="210" lean-forward="false" selection-start-line="48" selection-start-column="210" selection-end-line="48" selection-end-column="210" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/WorkBD/WorkBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="39" column="131" lean-forward="false" selection-start-line="39" selection-start-column="131" selection-end-line="39" selection-end-column="131" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -701,33 +682,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/ShowTime.java" />
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/settingWin.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="70" column="36" lean-forward="false" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/twoWin.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/twoWin.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1480">
           <caret line="74" column="163" lean-forward="false" selection-start-line="74" selection-start-column="163" selection-end-line="74" selection-end-column="163" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/EventTarget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-768">
           <caret line="129" column="17" lean-forward="false" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="72" column="40" lean-forward="false" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,92 +760,138 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="119" column="59" lean-forward="false" selection-start-line="119" selection-start-column="59" selection-end-line="119" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTime.java" />
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTimeNow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers.java" />
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/MyControllers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/settingWin.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="56" column="45" lean-forward="false" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/oneWin.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="74" column="95" lean-forward="false" selection-start-line="74" selection-start-column="95" selection-end-line="74" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerSettingWin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#bSaveSetting#0;class#ControllerSettingWin#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="181">
+          <caret line="66" column="107" lean-forward="false" selection-start-line="66" selection-start-column="107" selection-end-line="66" selection-end-column="107" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="39" column="64" lean-forward="false" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#exitNewServicemanWin#0;class#ControllerNewServiceman#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerTwoWin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="56" column="64" lean-forward="false" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+        <state relative-caret-position="417">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerOneWin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="111">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#openP#0;class#ControllerOneWin#0" expanded="false" />
-            <element signature="e#1144#1145#0" expanded="true" />
             <element signature="method#exitOneWin#0;class#ControllerOneWin#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="method#exitNewServicemanWin#0;class#ControllerNewServiceman#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerSettingWin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#bSaveSetting#0;class#ControllerSettingWin#0" expanded="false" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="method#exitSetting#0;class#ControllerSettingWin#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerTwoWin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="method#exitTwoWin#0;class#ControllerTwoWin#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="98" column="35" lean-forward="false" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#showTwoWin#0;class#WorkController#0" expanded="false" />
+            <element signature="method#showSettingWin#0;class#WorkController#0" expanded="false" />
             <element signature="method#showNewServiseman#0;class#WorkController#0" expanded="false" />
+            <element signature="method#inicializOneWin#0;class#WorkController#0" expanded="false" />
+            <element signature="e#3641#3757#0" expanded="false" />
+            <element signature="e#3944#4064#0" expanded="false" />
+            <element signature="e#4122#4259#0" expanded="false" />
+            <element signature="e#4319#4405#0" expanded="false" />
             <element signature="method#WorkController#0;class#WorkController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTime.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/ShowTimeNow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="method#startShowTime#0;class#ShowTimeNow#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

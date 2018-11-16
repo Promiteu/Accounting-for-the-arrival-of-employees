@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 import ru.AccessTime.GUI.WorkController;
 
 
-public class ControllerNewServiceman {
+public class ControllerNewServiceman  {
     public WorkController workController;
     private Stage myStage;
     @FXML
@@ -35,6 +35,12 @@ public class ControllerNewServiceman {
         this.workController = workController;
     }
 
+    public Button getbSaveNewS() {
+        return bSaveNewS;
+    }
+    public Button getbExitNewS() {
+        return bExitNewS;
+    }
     public void exitNewServicemanWin () {
         myStage = (Stage) bExitNewS.getScene().getWindow();
         myStage.close();

@@ -8,7 +8,7 @@ import javafx.scene.text.Text;
 import ru.AccessTime.GUI.WorkController;
 
 
-public class ControllerSettingWin {
+public class ControllerSettingWin  {
     public WorkController workController;
 
     @FXML
@@ -27,7 +27,7 @@ public class ControllerSettingWin {
     private TableColumn settingCondition;
 
     @FXML
-    public Text dateNow;
+    private Text timeNowShow;
 
     @FXML
     public Button bSaveSetting;
@@ -46,9 +46,23 @@ public class ControllerSettingWin {
     }
     public void exitSetting() {
         workController.getStageSettingWin().close();
+
     }
 
     public void setWorkController(WorkController workController) {
         this.workController = workController;
+    }
+
+    public Button getbSaveSetting() {
+        return bSaveSetting;
+    }
+    public Button getbNewServicemanWin() {
+        return bNewServicemanWin;
+    }
+    public Button getbExitSettingWin() {
+        return bExitSettingWin;
+    }
+    public Text getTimeNowShow() {
+        return timeNowShow;
     }
 }
