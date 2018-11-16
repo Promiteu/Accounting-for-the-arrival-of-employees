@@ -1,20 +1,16 @@
 package ru.AccessTime.GUI.Controllers;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import ru.AccessTime.Main;
+import ru.AccessTime.GUI.WorkController;
 
-import static java.lang.String.valueOf;
 
 
 public class ControllerOneWin {
+    public WorkController workController = new WorkController(this);
     Stage myStage;
-
-    @FXML
-    private Text timeNow;
 
     @FXML
     private Text timeNowShow;
@@ -52,19 +48,22 @@ public class ControllerOneWin {
     @FXML
     private Button bExitOne;
 
+
+
     @FXML private void startTwoWin() {
-        Main.workController.showTwoWin();
+        workController.showTwoWin();
     }
     @FXML private void openP() {
 
 
     }
     @FXML private void showSettingWin() {
-        Main.workController.showSetttibngWin();
+        workController.showSettingWin();
     }
-    @FXML private void exitOne() {
+    @FXML private void exitOneWin() {
        myStage = (Stage) bStartTwoWin.getScene().getWindow();
        myStage.close();
 
     }
+
 }

@@ -1,20 +1,15 @@
 package ru.AccessTime.GUI.Controllers;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
-import ru.AccessTime.Main;
-
-import java.io.IOException;
+import ru.AccessTime.GUI.WorkController;
 
 public class ControllerTwoWin {
+    public WorkController workController;
     @FXML
     private Text timeSignal;
 
@@ -40,7 +35,7 @@ public class ControllerTwoWin {
     private TextField numberState;
 
     @FXML
-    private Button bClik;
+    public Button bClik;
 
     @FXML
     private Button bPrint;
@@ -49,6 +44,10 @@ public class ControllerTwoWin {
     private Button bExitTwoWin;
 
     public void exitTwoWin() {
-        Main.workController.getStageTwoWin().close();
+        workController.getStageTwoWin().close();
+    }
+
+    public void setWorkController(WorkController workController) {
+        this.workController = workController;
     }
 }

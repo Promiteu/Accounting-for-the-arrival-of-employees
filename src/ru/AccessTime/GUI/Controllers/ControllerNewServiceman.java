@@ -1,19 +1,15 @@
 package ru.AccessTime.GUI.Controllers;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import ru.AccessTime.Main;
-
-import java.io.IOException;
+import ru.AccessTime.GUI.WorkController;
 
 
 public class ControllerNewServiceman {
-
+    public WorkController workController;
+    private Stage myStage;
     @FXML
     private TextField numberStateNewS;
 
@@ -35,8 +31,14 @@ public class ControllerNewServiceman {
     @FXML
     private Button bExitNewS;
 
+    public void setWorkController(WorkController workController) {
+        this.workController = workController;
+    }
+
     public void exitNewServicemanWin () {
-        Main.workController.getStageNewServiceman().close();
+        myStage = (Stage) bExitNewS.getScene().getWindow();
+        myStage.close();
+
     }
 
 }

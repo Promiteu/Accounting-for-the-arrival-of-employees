@@ -1,5 +1,4 @@
-package ru.AccessTime;
+package ru.AccessTime.GUI;
 
 public class ShowTime {
-
 }

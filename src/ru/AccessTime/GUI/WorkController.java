@@ -3,25 +3,26 @@ package ru.AccessTime.GUI;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import ru.AccessTime.GUI.Controllers.ControllerNewServiceman;
 import ru.AccessTime.GUI.Controllers.ControllerOneWin;
 import ru.AccessTime.GUI.Controllers.ControllerSettingWin;
 import ru.AccessTime.GUI.Controllers.ControllerTwoWin;
-import ru.AccessTime.Main;
 
 import java.io.IOException;
+import java.util.Date;
 
 public class WorkController {
     private ControllerOneWin controllerOneWin;
     private ControllerTwoWin controllerTwoWin;
+    private ControllerSettingWin controllerSettingWin;
+    private ControllerNewServiceman controllerNewServiceman;
+
+
     private Stage stageTwoWin;
     private Parent rootTwoWin;
-    private ControllerSettingWin controllerSettingWin;
     private Stage stageSettingWin;
     private Parent rootSettingWin;
-    private ControllerNewServiceman controllerNewServiceman;
     private Stage stageNewServiceman;
     private Parent rootNewServiceman;
 
@@ -35,62 +36,87 @@ public class WorkController {
         return stageNewServiceman;
     }
 
-    public ControllerOneWin getControllerOneWin() {
-        return controllerOneWin;
-    }
-    public ControllerTwoWin getControllerTwoWin() {
-        return controllerTwoWin;
-    }
-    public ControllerSettingWin getControllerSettingWin() {
-        return controllerSettingWin;
-    }
-    public ControllerNewServiceman getControllerNewServiceman() {
-        return controllerNewServiceman;
-    }
-
     public void showTwoWin () {
         stageTwoWin = new Stage();
+        FXMLLoader loaderTwoWin = new FXMLLoader();
+        loaderTwoWin.setLocation(getClass().getResource("FXML/twoWin.fxml"));
         try {
-            rootTwoWin = FXMLLoader.load(getClass().getResource("FXML/twoWin.fxml"));
+            rootTwoWin = loaderTwoWin.load();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        stageTwoWin.initModality(Modality.APPLICATION_MODAL);
-        stageTwoWin.setTitle("Учет прибытия личного состава");
+        controllerTwoWin = loaderTwoWin.getController();
+        controllerTwoWin.setWorkController(this);
+        stageTwoWin.setTitle("Учет прибытия");
         stageTwoWin.setScene(new Scene(rootTwoWin));
         stageTwoWin.show();
+
+
     }
-    public void showSetttibngWin () {
+    public void showSettingWin() {
         stageSettingWin = new Stage();
+        FXMLLoader loaderSettingWin = new FXMLLoader();
+        loaderSettingWin.setLocation(getClass().getResource("FXML/settingWin.fxml"));
         try {
-            rootSettingWin = FXMLLoader.load(getClass().getResource("FXML/settingWin.fxml"));
+            rootSettingWin = loaderSettingWin.load();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        stageSettingWin.initModality(Modality.APPLICATION_MODAL);
+        controllerSettingWin = loaderSettingWin.getController();
+        controllerSettingWin.setWorkController(this);
         stageSettingWin.setTitle("Уточнение");
         stageSettingWin.setScene(new Scene(rootSettingWin));
         stageSettingWin.show();
+        showTimeNow();
+
+
     }
     public void showNewServiseman () {
         stageNewServiceman = new Stage();
+        FXMLLoader loaderNewServiceManWin = new FXMLLoader();
+        loaderNewServiceManWin.setLocation(getClass().getResource("FXML/newServiceman.fxml"));
         try {
-            rootNewServiceman = FXMLLoader.load(getClass().getResource("FXML/newServiceman.fxml"));
+            rootNewServiceman = loaderNewServiceManWin.load();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        stageNewServiceman.setTitle("Создание нового военнослужащего");
-        stageNewServiceman.setScene(new Scene(rootNewServiceman));
-        stageNewServiceman.show();
+        controllerNewServiceman = loaderNewServiceManWin.getController();
+        controllerNewServiceman.setWorkController(this);
+        stageSettingWin.setTitle("Уточнение");
+        stageSettingWin.setScene(new Scene(rootNewServiceman));
+        stageSettingWin.show();
     }
-    public void closeOneWin () {
+
+    public void showTimeNow() {
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (true) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    Date dateNow = new Date();
+                    String string = dateNow.toString();
+                    controllerSettingWin.dateNow.setText(string);
+                    System.out.println(dateNow);
+                }
+            }
+        });
+
+        thread.start();
+        thread.setDaemon(true);
+    }
+
+    public void eventOneWin () {
 
     }
 
-    public WorkController() {
-        this.controllerOneWin = new ControllerOneWin();
-        this.controllerTwoWin = new ControllerTwoWin();
-        this.controllerSettingWin = new ControllerSettingWin();
-        this.controllerNewServiceman = new ControllerNewServiceman();
+    public WorkController(ControllerOneWin controllerOneWin) {
+        this.controllerOneWin = controllerOneWin;
+
     }
+
+
 }

@@ -6,13 +6,15 @@ public class Serviceman {       //Класс военнослужащих
     private String surname;     //Фамилия
     private String name;        //Имя
     private String patronymic;  //Отчество
+    private float chPlus;       //время прибытия
 
 
-    public Serviceman(String position, String surname, String name, String patronymic, int nomberState) {
+    public Serviceman(String position, String surname, String name, String patronymic, int nomberState, float chPlus) {
         this.position = position;
-        surname = surname;
-        name = name;
-        patronymic = patronymic;
+        this.surname = surname;
+        this.name = name;
+        this.patronymic = patronymic;
+        this.chPlus = chPlus;
         this.nomberState = nomberState;
     }
 }

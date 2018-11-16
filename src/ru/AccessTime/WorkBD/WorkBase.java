@@ -37,18 +37,19 @@ public class WorkBase {
         }
     }
 
-    public void creatNewServisman (int nomberState, String position, String surname, String name, String patronymic) {
+    public void creatNewServisman (int nomberState, String position, String surname, String name, String patronymic, float chPlus) {
 
         try {
             newServiceman = connectionBD.getConnection().prepareStatement("SELECT NomberState FROM SrevicMan WHERE NomberState = " + nomberState);
             ResultSet rs = newServiceman.executeQuery();
             if (!rs.next()) {
-                newServiceman = connectionBD.getConnection().prepareStatement("INSERT INTO SrevicMan (NomberState, Position, Surname, Name, Patronymic) VALUES(?, ?, ?, ?, ?);");
+                newServiceman = connectionBD.getConnection().prepareStatement("INSERT INTO SrevicMan (NomberState, Position, Surname, Name, Patronymic) VALUES(?, ?, ?, ?, ?, ?);");
                 newServiceman.setInt(1, nomberState);
                 newServiceman.setString(2, position);
                 newServiceman.setString(3, surname);
                 newServiceman.setString(4, name);
                 newServiceman.setString(5, patronymic);
+                newServiceman.setFloat(6, chPlus);
                 newServiceman.addBatch();
                 newServiceman.executeBatch();
             } else System.out.println("Клиент существует");

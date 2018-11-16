@@ -1,21 +1,15 @@
 package ru.AccessTime.GUI.Controllers;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.text.Text;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
-import ru.AccessTime.Main;
-
-import java.io.IOException;
+import ru.AccessTime.GUI.WorkController;
 
 
 public class ControllerSettingWin {
+    public WorkController workController;
 
     @FXML
     private Text dateUpdateShow;
@@ -33,10 +27,10 @@ public class ControllerSettingWin {
     private TableColumn settingCondition;
 
     @FXML
-    private Text dateNow;
+    public Text dateNow;
 
     @FXML
-    private Button bSaveSetting;
+    public Button bSaveSetting;
 
     @FXML
     private Button bNewServicemanWin;
@@ -48,10 +42,13 @@ public class ControllerSettingWin {
 
     }
     public void newServicemanWin() {
-        Main.workController.showNewServiseman();
+        workController.showNewServiseman();
     }
     public void exitSetting() {
-        Main.workController.getStageSettingWin().close();
+        workController.getStageSettingWin().close();
     }
 
+    public void setWorkController(WorkController workController) {
+        this.workController = workController;
+    }
 }
