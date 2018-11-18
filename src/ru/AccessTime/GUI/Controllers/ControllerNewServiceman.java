@@ -9,6 +9,7 @@ import ru.AccessTime.GUI.WorkController;
 
 public class ControllerNewServiceman  {
     public WorkController workController;
+
     private Stage myStage;
     @FXML
     private TextField numberStateNewS;
@@ -31,6 +32,8 @@ public class ControllerNewServiceman  {
     @FXML
     private Button bExitNewS;
 
+    public TextField chPlus;
+
     public void setWorkController(WorkController workController) {
         this.workController = workController;
     }
@@ -40,6 +43,17 @@ public class ControllerNewServiceman  {
     }
     public Button getbExitNewS() {
         return bExitNewS;
+    }
+
+    public void creatNewServiceman () {
+        workController.workBase.creatNewServisman( Integer.parseInt(numberStateNewS.getText()), positionNewS.getText(), surnameNewS.getText(), nameNewS.getText(), patronymicNewS.getText(), Integer.parseInt(chPlus.getText()));
+        numberStateNewS.clear();
+        positionNewS.clear();
+        surnameNewS.clear();
+        nameNewS.clear();
+        patronymicNewS.clear();
+        chPlus.clear();
+
     }
     public void exitNewServicemanWin () {
         myStage = (Stage) bExitNewS.getScene().getWindow();

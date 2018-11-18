@@ -1,16 +1,25 @@
 package ru.AccessTime.GUI.Controllers;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyCode;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import ru.AccessTime.Accounting.AccountingHandler;
+import ru.AccessTime.GUI.SignalBG;
 import ru.AccessTime.GUI.WorkController;
 
+import java.net.URL;
+import java.util.Map;
+import java.util.ResourceBundle;
+import java.util.TreeMap;
 
-
-public class ControllerOneWin {
+public class ControllerOneWin implements Initializable{
     public WorkController workController = new WorkController(this);
     public Stage myStage;
+    private String signal;
+    private String timeSignalDate;
 
     @FXML
     private Text timeNowShow;
@@ -31,10 +40,13 @@ public class ControllerOneWin {
     private MenuItem menuInfo;
 
     @FXML
+    private ChoiceBox choiceBoxOneWin;
+
+    @FXML
     private TextField timeSignal;
 
     @FXML
-    private ListView listOne;
+    private ListView <String > listOne;
 
     @FXML
     private Button bStartTwoWin;
@@ -48,10 +60,15 @@ public class ControllerOneWin {
     @FXML
     private Button bExitOne;
 
+    public ControllerOneWin() {
+    }
 
 
     @FXML public void startTwoWin() {
         workController.showTwoWin();
+        timeSignalDate = timeSignal.getText();
+        workController.getControllerTwoWin().getTimeSignal().setText(timeSignalDate);
+
     }
     @FXML public void openP() {
 
@@ -83,5 +100,47 @@ public class ControllerOneWin {
     }
     public TextField getTimeSignal() {
         return timeSignal;
+    }
+    public ChoiceBox<SignalBG> getChoiceBoxOneWin() {
+        return choiceBoxOneWin;
+    }
+    public ListView<String> getListOne() {
+        return listOne;
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        choiceBoxOneWin.getItems().addAll(SignalBG.POVISHINNAY.getName(), SignalBG.VOENNAY_OPASNOST.getName(), SignalBG.POLNAIY.getName());
+        createEnterForNode();
+        listAccounting(AccountingHandler.listAccounting);
+    }
+
+    public void createEnterForNode() {
+        workController.getShowTimeNow().startShowTime(timeNowShow);
+        bStartTwoWin.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                workController.showTwoWin();
+            }
+        });
+        //bOpenP.setOnKeyPressed();                                          //прописать после создания метода ОТКРЫТЬ
+        bShowSettingWin.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                showSettingWin();
+            }
+        });
+        bExitOne.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                exitOneWin();
+            }
+        });
+        timeSignal.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {workController.getShowTimeNow();}
+        });
+    }
+
+    private void listAccounting (TreeMap <Integer, String > list) {
+        for (Map.Entry <Integer, String> o : list.entrySet()) {
+            listOne.getItems().add(o.getValue());
+        }
     }
 }

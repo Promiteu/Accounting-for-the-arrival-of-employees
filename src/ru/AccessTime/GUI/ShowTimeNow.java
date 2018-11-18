@@ -15,7 +15,7 @@ public class ShowTimeNow {
             public void run() {
                 while (startThread) {
                     Date date = new Date();
-                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss dd.mm");
+                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss dd.MM");
                     String string = simpleDateFormat.format(date).toString();
                     text.setText(string);
                     try {

@@ -3,22 +3,25 @@ package ru.AccessTime.GUI;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.KeyCode;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import ru.AccessTime.GUI.Controllers.ControllerNewServiceman;
 import ru.AccessTime.GUI.Controllers.ControllerOneWin;
 import ru.AccessTime.GUI.Controllers.ControllerSettingWin;
 import ru.AccessTime.GUI.Controllers.ControllerTwoWin;
+import ru.AccessTime.WorkBD.WorkBase;
 
 import java.io.IOException;
 
 public class WorkController {
+    public WorkBase workBase;
+
     private ControllerOneWin controllerOneWin;
     private ControllerTwoWin controllerTwoWin;
     private ControllerSettingWin controllerSettingWin;
     private ControllerNewServiceman controllerNewServiceman;
 
+    private SignalBG eSinalBG;
     private ShowTimeNow showTimeNow = new ShowTimeNow();
 
     private Stage stageTwoWin;
@@ -27,6 +30,13 @@ public class WorkController {
     private Parent rootSettingWin;
     private Stage stageNewServiceman;
     private Parent rootNewServiceman;
+
+    public WorkController(ControllerOneWin controllerOneWin) {
+        this.controllerOneWin = controllerOneWin;
+        workBase = new WorkBase();
+
+    }
+
 
     public Stage getStageTwoWin() {
         return stageTwoWin;
@@ -37,8 +47,45 @@ public class WorkController {
     public Stage getStageNewServiceman() {
         return stageNewServiceman;
     }
+    public ShowTimeNow getShowTimeNow() {
+        return showTimeNow;
+    }
+    public ControllerOneWin getControllerOneWin() {
+        return controllerOneWin;
+    }
+    public ControllerTwoWin getControllerTwoWin() {
+        return controllerTwoWin;
+    }
+    public ControllerSettingWin getControllerSettingWin() {
+        return controllerSettingWin;
+    }
+    public ControllerNewServiceman getControllerNewServiceman() {
+        return controllerNewServiceman;
+    }
 
     public void showTwoWin () {
+        createTwoWin();
+        showTimeNow.startShowTime(controllerTwoWin.getTimeNowShow());
+        workBase.accountingHandler.newAccounting(controllerOneWin.getListOne(), workBase);
+        workBase.creatNewTableAccointing(workBase.accountingHandler.getNomberAccouting());
+        System.out.println(workBase.accountingHandler.getNomberAccouting());
+    }
+    public void showSettingWin() {
+        createSettingWin();
+        showTimeNow.startShowTime(controllerSettingWin.getTimeNowShow());
+
+
+
+
+    }
+    public void showNewServiseman () {
+        createNewServicemanWin();
+        stageNewServiceman.show();
+
+
+    }
+
+    public void createTwoWin() {
         stageTwoWin = new Stage();
         FXMLLoader loaderTwoWin = new FXMLLoader();
         loaderTwoWin.setLocation(getClass().getResource("FXML/twoWin.fxml"));
@@ -52,11 +99,10 @@ public class WorkController {
         stageTwoWin.setTitle("Учет прибытия");
         stageTwoWin.initModality(Modality.APPLICATION_MODAL);
         stageTwoWin.setScene(new Scene(rootTwoWin));
+        stageTwoWin.setResizable(false);
         stageTwoWin.show();
-        showTimeNow.startShowTime(controllerTwoWin.getTimeNowShow());
-
     }
-    public void showSettingWin() {
+    public void createSettingWin() {
         stageSettingWin = new Stage();
         FXMLLoader loaderSettingWin = new FXMLLoader();
         loaderSettingWin.setLocation(getClass().getResource("FXML/settingWin.fxml"));
@@ -69,13 +115,10 @@ public class WorkController {
         controllerSettingWin.setWorkController(this);
         stageSettingWin.setTitle("Уточнение");
         stageSettingWin.setScene(new Scene(rootSettingWin));
+        stageSettingWin.setResizable(false);
         stageSettingWin.show();
-        showTimeNow.startShowTime(controllerSettingWin.getTimeNowShow());
-
-
-
     }
-    public void showNewServiseman () {
+    public void createNewServicemanWin() {
         stageNewServiceman = new Stage();
         FXMLLoader loaderNewServiceManWin = new FXMLLoader();
         loaderNewServiceManWin.setLocation(getClass().getResource("FXML/newServiceman.fxml"));
@@ -89,42 +132,11 @@ public class WorkController {
         stageNewServiceman.setTitle("Уточнение");
         stageNewServiceman.initModality(Modality.APPLICATION_MODAL);
         stageNewServiceman.setScene(new Scene(rootNewServiceman));
-        stageNewServiceman.show();
-
+        stageNewServiceman.setResizable(false);
     }
 
-    public void inicializOneWin () {
 
-        showTimeNow.startShowTime(controllerOneWin.getTimeNowShow());
-        controllerOneWin.getbStartTwoWin().setOnKeyPressed(event -> {
-            if (event.getCode() == KeyCode.ENTER) {
-                showTwoWin();
-            }
-        });
-        controllerOneWin.getbOpenP();                                           //прописать после создания метода ОТКРЫТЬ
-        controllerOneWin.getbShowSettingWin().setOnKeyPressed(event -> {
-            if (event.getCode() == KeyCode.ENTER) {
-                showSettingWin();
-            }
-        });
-        controllerOneWin.getbExitOne().setOnKeyPressed(event -> {
-            if (event.getCode() == KeyCode.ENTER) {
-                controllerOneWin.exitOneWin();
-                }
-        });
-        controllerOneWin.getTimeSignal().setOnKeyPressed(event -> {
-            if (event.getCode() == KeyCode.ENTER) {showTwoWin();}
-        });
-    }
 
-    public ShowTimeNow getShowTimeNow() {
-        return showTimeNow;
-    }
-
-    public WorkController(ControllerOneWin controllerOneWin) {
-        this.controllerOneWin = controllerOneWin;
-
-    }
 
 
 }

@@ -1,6 +1,7 @@
 package ru.AccessTime.GUI.Controllers;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -8,8 +9,14 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import ru.AccessTime.GUI.WorkController;
 
-public class ControllerTwoWin  {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class ControllerTwoWin  implements Initializable{
     public WorkController workController;
+    private String signal;
+    private String timeSignalDate;
+
     @FXML
     private Text timeSignal;
 
@@ -63,5 +70,21 @@ public class ControllerTwoWin  {
     }
     public Text getTimeNowShow() {
         return timeNowShow;
+    }
+    public Text getTimeSignal() {
+        return timeSignal;
+    }
+
+    public void setSignal(String signal) {
+        this.signal = signal;
+    }
+    public void setTimeSignalDate(String timeSignalDate) {
+        this.timeSignalDate = timeSignalDate;
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+
     }
 }

@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
-
+<?import javafx.scene.text.*?>
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.AccessTime.GUI.Controllers.ControllerNewServiceman">
    <children>
       <GridPane prefHeight="402.0" prefWidth="600.0">
@@ -39,9 +36,9 @@
             <TextField fx:id="surnameNewS" prefHeight="30.0" prefWidth="200.0" text="Введите Фамилию" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="nameNewS" prefHeight="30.0" prefWidth="200.0" text="Введите Имя" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <TextField fx:id="patronymicNewS" prefHeight="30.0" prefWidth="200.0" text="Введите Отчество" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField fx:id="patronymicNewS1" prefHeight="30.0" prefWidth="200.0" text="Введите Время прибытия" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="chPlus" prefHeight="30.0" prefWidth="200.0" text="Введите Время прибытия" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Время прибытия" GridPane.rowIndex="5" />
-            <Button fx:id="bSaveNewS" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Сохранить" GridPane.columnIndex="2">
+            <Button fx:id="bSaveNewS" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Сохранить" GridPane.columnIndex="2" onAction="#creatNewServiceman">
                <GridPane.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </GridPane.margin>
