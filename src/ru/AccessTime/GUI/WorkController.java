@@ -69,23 +69,12 @@ public class WorkController {
     }
 
     public void showTwoWin () {
-//        controllerOneWin.getTimeSignal().focusedProperty().addListener((arg0, oldValue, newValue) -> {
-//            if (!newValue) {
-//                if (!controllerOneWin.getTimeSignal().getText().matches("(0[0-9]|1[0-9]|2[0-4])(:[0-6][0-9]){0,1}")) {
-//                    controllerOneWin.getTimeSignal().setText("");
-//
-//                }
-//            }
-//        });
-
             createTwoWin();
             showTimeNow.startShowTime(controllerTwoWin.getTimeNowShow());
             workBase.accountingHandler.setTimeSignalDate(controllerOneWin.getTimeSignalDate());
             workBase.accountingHandler.newAccounting(controllerOneWin.getListOne(), workBase);
             controllerTwoWin.setTimeSignalDate(controllerOneWin.getTimeSignalDate());
-
             controllerTwoWin.lodingTableServicemanTW();
-
     }
     public void showSettingWin() {
         createSettingWin();
@@ -99,8 +88,6 @@ public class WorkController {
         createInformationWin();
         stageInforvation.show();
     }
-
-
 
     public void createTwoWin() {
         stageTwoWin = new Stage();
@@ -170,7 +157,6 @@ public class WorkController {
         stageInforvation.setTitle("Уточнение");
         stageInforvation.initModality(Modality.APPLICATION_MODAL);
         stageInforvation.setScene(new Scene(rootInforvation));
-
         stageInforvation.setResizable(false);
     }
 

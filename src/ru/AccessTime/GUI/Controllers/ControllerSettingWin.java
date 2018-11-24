@@ -23,8 +23,12 @@ import ru.AccessTime.GUI.WorkController;
 import ru.AccessTime.Serviceman.Condition;
 import ru.AccessTime.Serviceman.Serviceman;
 
+import java.io.*;
 import java.lang.reflect.Method;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Observable;
 import java.util.ResourceBundle;
 
@@ -112,6 +116,7 @@ public class ControllerSettingWin extends Observable implements Initializable {
         tableSetting.setItems(tableServicemenList);
         setupClearButtonField(ctfIntLastname);
         createEnterForNode();
+        correctionDateOut();
 
 
     }
@@ -147,8 +152,6 @@ public class ControllerSettingWin extends Observable implements Initializable {
                 exitSetting();
             }
         });
-
-
     }
 
     public void loadingTableServiceman() {
@@ -224,6 +227,7 @@ public class ControllerSettingWin extends Observable implements Initializable {
             for (Serviceman serviceman : tableServicemenList) {
                 workController.workBase.updateServisman(serviceman);
                 }
+                correctionDateIn();
                 saving = true;
     }
     public void findServiceman () {
@@ -248,6 +252,44 @@ public class ControllerSettingWin extends Observable implements Initializable {
             m.setAccessible(true);
             m.invoke(null, customTextField, customTextField.rightProperty());
         }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public void correctionDateOut () {
+        BufferedReader br = null;
+        try {
+            File fileCor = new File("CorrectionDate.txt");
+            if (!fileCor.exists()){
+                fileCor.createNewFile();
+            }
+            br = new BufferedReader(new FileReader("CorrectionDate.txt"));
+            String correctionDate;
+            while ((correctionDate = br.readLine()) != null) {
+                dateUpdateShow.setText(correctionDate);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                br.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    public void correctionDateIn () {
+        try {
+
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(new Date());
+            calendar.add(Calendar.DAY_OF_WEEK,1);
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.YYYY");
+            String correctionDate = simpleDateFormat.format(calendar.getTime()).toString();
+            PrintWriter pw = new PrintWriter("CorrectionDate.txt");
+            pw.println(correctionDate);
+            pw.close();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

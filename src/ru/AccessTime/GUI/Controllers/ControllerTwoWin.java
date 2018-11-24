@@ -24,9 +24,7 @@ public class ControllerTwoWin  implements Initializable{
     public WorkController workController;
     private ObservableList<Serviceman> servicemenListFull = FXCollections.observableArrayList();
     private ObservableList<Serviceman> servicemenListAccounting = FXCollections.observableArrayList();
-    private String signal;
     private String timeSignalDate;
-
 
     private double percent;
     private String date;
@@ -75,7 +73,6 @@ public class ControllerTwoWin  implements Initializable{
 
     public void exitTwoWin() {
         workController.getStageTwoWin().close();
-
     }
 
     public void setWorkController(WorkController workController) {
@@ -121,7 +118,6 @@ public class ControllerTwoWin  implements Initializable{
     }
 
     public void addTableNewAccounting () {
-
         try {
             Integer numberStat = Integer.valueOf(tfNumberState.getText());
             Serviceman serviceman = null;
@@ -143,15 +139,10 @@ public class ControllerTwoWin  implements Initializable{
                 percentsShow ();
                 workController.workBase.lodingTableNewAccounting(workController.workBase.accountingHandler.getNomberAccouting(), serviceman);
                 workController.workBase.updateAction(workController.workBase.accountingHandler.getNomberAccouting(), percent);
-            } else DialogManager.showInfoDialog("Предупреждение", "Военнослужащего с таким номером нет в базе!");
-
+            } else DialogManager.showInfoDialog("Предупреждение", "Военнослужащий с таким номером уже отмечен, или военнослужащего с таким номером нет в базе!");
         } catch (Exception e) {
-            DialogManager.showInfoDialog("Предупреждение", "Военнослужащего с таким номером нет в базе!");
+            DialogManager.showInfoDialog("Предупреждение", "Вы не ввели номер военнослужащего!");
         }
-
-
-
-
     }
 
     public void percentsShow () {
@@ -163,9 +154,7 @@ public class ControllerTwoWin  implements Initializable{
 
     public void printExcel () {
         workController.getWorkExcel().creatNewExcel(servicemenListAccounting, timeSignalDate, date, (String.valueOf(percent) + "%"));
-
     }
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

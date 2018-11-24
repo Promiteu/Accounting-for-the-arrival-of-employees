@@ -39,8 +39,6 @@ public class WorkBase {
                     "    Condition   STRING,\n" +
                     "    chPlus      STRING\n" +
                     ");\n");
-            System.out.println("Таблица создалась!");
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -55,7 +53,6 @@ public class WorkBase {
                     "    percents DOUBLE,\n" +
                     "    time     STRING\n" +
                     ");\n");
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -74,13 +71,10 @@ public class WorkBase {
                     "    chPlus      TIME,\n" +
                     "    timeAcc     TIME\n" +
                     ");\n");
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-
-
     public void lodingAccountingHandler() {
         try {
             preparedStatement = connectionBD.getConnection().prepareStatement("SELECT * FROM Accounting");
@@ -92,7 +86,6 @@ public class WorkBase {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
     public void saveAction (int nomber, long date, Double percents, String timeSignalDate) {
         try {
@@ -111,7 +104,6 @@ public class WorkBase {
         try {
             statement = connectionBD.getConnection().createStatement();
             statement.executeUpdate("UPDATE Accounting SET `percents` = " + percents + " WHERE `Nomber` = " + nomber + ";");
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -131,10 +123,8 @@ public class WorkBase {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
     public void updateServisman (Serviceman serviceman) {
-
         try {
             statement = connectionBD.getConnection().createStatement();
             statement.executeUpdate("UPDATE SrevicMan SET Position = '" + serviceman.getPosition()
@@ -149,21 +139,23 @@ public class WorkBase {
         }
     }
     public void deleteServisman (Serviceman serviceman) {
-
         try {
             statement = connectionBD.getConnection().createStatement();
             statement.executeUpdate("DELETE FROM SrevicMan WHERE NomberState = " + serviceman.getNomberState() + ";");
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-
-    public void clearTableServiceman () {
+    public void deleteAc (Accounting accounting) {
         try {
             statement = connectionBD.getConnection().createStatement();
-            statement.executeUpdate("DELETE FROM `SrevicMan`;");
-
+            statement.executeUpdate("DELETE FROM NewAccounting WHERE Nomber = " + accounting.getNomberAccouting() + ";");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            statement = connectionBD.getConnection().createStatement();
+            statement.executeUpdate("DELETE FROM Accounting WHERE Nomber = " + accounting.getNomberAccouting() + ";");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -174,12 +166,10 @@ public class WorkBase {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()){
                 AccountingHandler.servicemenList.add(new Serviceman(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7) ));
-
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
     public void lodingTableNewAccounting (Integer integer, Serviceman servicemen) {
         try {
@@ -195,14 +185,10 @@ public class WorkBase {
                 preparedStatement.setString(9, servicemen.getTimeAcc());
                 preparedStatement.addBatch();
                 preparedStatement.executeBatch();
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
     }
-
     public ObservableList <Serviceman> openAccountingExcel (Integer nomber) {
         ObservableList <Serviceman> openAccountingExcel = FXCollections.observableArrayList();
         try {

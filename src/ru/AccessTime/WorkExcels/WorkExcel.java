@@ -12,29 +12,21 @@ import java.awt.*;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class WorkExcel { // НЕЗАБЫТЬ ЗАКРЫТЬ FileOutputStream
-    private Date date;
-    private SimpleDateFormat simpleDateFormat;
-
-
-
-
 
     public void creatNewExcel (ObservableList<Serviceman> servicemenListAccounting, String time, String data, String  percent) {
         Workbook wb = new HSSFWorkbook();
         OutputStream fileOut = null;
         try {
-            fileOut = new FileOutputStream("D:/Обучение/Программирование/Cod/AccessTime/AccountingInExcel/workbook1.xls");
+            fileOut = new FileOutputStream("workbook1.xls"); //D:/Обучение/Программирование/Cod/AccessTime/AccountingInExcel/
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Sheet sheet1 = wb.createSheet("Учет прибытия по состоянию");
+        Sheet sheet1 = wb.createSheet("Учет прибытия личного состава");
 
         Map<String, Object> properties = new HashMap<String, Object>();
         creatMyStyle(properties);
@@ -54,7 +46,6 @@ public class WorkExcel { // НЕЗАБЫТЬ ЗАКРЫТЬ FileOutputStream
         Row row3 = sheet1.createRow(3);
         createCell(wb, row3,0, "Процент:", HorizontalAlignment.CENTER, VerticalAlignment.CENTER, properties);
         createCell(wb, row3,1, percent, HorizontalAlignment.CENTER, VerticalAlignment.CENTER, properties);
-
 
         Row row4 = sheet1.createRow(4);
         createCell(wb, row4,0, "№ п/п", HorizontalAlignment.CENTER, VerticalAlignment.CENTER, properties);
@@ -97,8 +88,6 @@ public class WorkExcel { // НЕЗАБЫТЬ ЗАКРЫТЬ FileOutputStream
             e.printStackTrace();
         }   //wb.close();
         openExcel ();
-
-
     }
 
     public void creatMyStyle(Map<String, Object> properties) {
@@ -114,11 +103,10 @@ public class WorkExcel { // НЕЗАБЫТЬ ЗАКРЫТЬ FileOutputStream
 
     public void openExcel () {
         try {
-            Desktop.getDesktop().open(new java.io.File("D:/Обучение/Программирование/Cod/AccessTime/AccountingInExcel/workbook1.xls"));
+            Desktop.getDesktop().open(new java.io.File("workbook1.xls")); //D:/Обучение/Программирование/Cod/AccessTime/AccountingInExcel/
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
     private void createCell(Workbook wb, Row row, int column, String stringCellValue, HorizontalAlignment halign, VerticalAlignment valign, Map<String, Object> properties) {
         Cell cell = row.createCell(column);
@@ -126,8 +114,6 @@ public class WorkExcel { // НЕЗАБЫТЬ ЗАКРЫТЬ FileOutputStream
         CellUtil.setAlignment(cell, halign);
         CellUtil.setVerticalAlignment(cell, valign);
         CellUtil.setCellStyleProperties(cell, properties);
-
-
     }
     private void createCell(Workbook wb, Row row, int column, Integer intCellValue, HorizontalAlignment halign, VerticalAlignment valign, Map<String, Object> properties) {
         Cell cell = row.createCell(column);
@@ -136,15 +122,6 @@ public class WorkExcel { // НЕЗАБЫТЬ ЗАКРЫТЬ FileOutputStream
         CellUtil.setVerticalAlignment(cell, valign);
         CellUtil.setCellStyleProperties(cell, properties);
     }
-    private void createCell(Workbook wb, Row row, int column, Double doubleCellValue, HorizontalAlignment halign, VerticalAlignment valign,  Map<String, Object> properties) {
-        Cell cell = row.createCell(column);
-        cell.setCellValue(doubleCellValue);
-        CellUtil.setAlignment(cell, halign);
-        CellUtil.setVerticalAlignment(cell, valign);
-        CellUtil.setCellStyleProperties(cell, properties);
-
-    }
-
     private void createCellNotBorder(Workbook wb, Row row, int column, String stringCellValue, HorizontalAlignment halign, VerticalAlignment valign) {
         Cell cell = row.createCell(column);
         cell.setCellValue(stringCellValue);
@@ -153,7 +130,4 @@ public class WorkExcel { // НЕЗАБЫТЬ ЗАКРЫТЬ FileOutputStream
         cellStyle.setVerticalAlignment(valign);
         cell.setCellStyle(cellStyle);
     }
-
-
-
 }

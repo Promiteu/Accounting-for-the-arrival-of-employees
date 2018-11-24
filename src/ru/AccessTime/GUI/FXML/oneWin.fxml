@@ -76,7 +76,7 @@
                                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                  </HBox.margin>
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font name="System Bold" size="18.0" />
                                  </font>
                               </Text>
                            </children>
@@ -90,6 +90,7 @@
                      <children>
                         <Button fx:id="bStartTwoWin" contentDisplay="CENTER" mnemonicParsing="false" onAction="#startTwoWin" prefHeight="30.0" prefWidth="107.0" text="Начать" textAlignment="CENTER" />
                         <Button fx:id="bOpenP" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openAccountingWordExcel" prefHeight="30.0" prefWidth="107.0" text="Открыть" textAlignment="CENTER" />
+                        <Button fx:id="btnDeleteAc" mnemonicParsing="false" onAction="#deletAc" prefHeight="30.0" prefWidth="107.0" text="Удалить" textAlignment="CENTER" />
                         <Button fx:id="bShowSettingWin" contentDisplay="CENTER" mnemonicParsing="false" onAction="#showSettingWin" prefHeight="30.0" prefWidth="107.0" text="Уточнение" textAlignment="CENTER" />
                         <Pane prefHeight="453.0" prefWidth="114.0" />
                         <Button fx:id="bExitOne" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitOneWin" prefHeight="30.0" prefWidth="109.0" text="Выход" textAlignment="CENTER" VBox.vgrow="ALWAYS">

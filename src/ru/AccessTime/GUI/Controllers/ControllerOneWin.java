@@ -57,6 +57,9 @@ public class ControllerOneWin implements Initializable{
     private Button bOpenP;
 
     @FXML
+    public Button btnDeleteAc;
+
+    @FXML
     private Button bShowSettingWin;
 
     @FXML
@@ -88,10 +91,17 @@ public class ControllerOneWin implements Initializable{
 
     public void openAccountingWordExcel () {
         Accounting accounting = listOne.getSelectionModel().getSelectedItem();
-        if (accounting != null)
-        {ObservableList <Serviceman> open = workController.workBase.openAccountingExcel(accounting.getNomberAccouting());
-        System.out.println(open);
+        if (accounting != null) {
+        ObservableList <Serviceman> open = workController.workBase.openAccountingExcel(accounting.getNomberAccouting());
         workController.getWorkExcel().creatNewExcel(open, accounting.getTimeSignalDate(), dateNow, String.valueOf(accounting.getPercents()) + "%");
+        } else DialogManager.showErrorDialog("Ошибка", "Не выбрана дата проведения сбора личного состава!");
+    }
+
+    public void deletAc () {
+        Accounting accounting = listOne.getSelectionModel().getSelectedItem();
+        if (accounting != null){
+            workController.workBase.deleteAc(accounting);
+            AccountingHandler.accountingList.remove(accounting);
         } else DialogManager.showErrorDialog("Ошибка", "Не выбрана дата проведения сбора личного состава!");
     }
 
@@ -124,6 +134,13 @@ public class ControllerOneWin implements Initializable{
             }
 
         });
+        btnDeleteAc.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                deletAc ();
+            }
+
+        });
+
         bShowSettingWin.setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER) {
                 showSettingWin();

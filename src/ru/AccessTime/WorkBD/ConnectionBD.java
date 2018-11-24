@@ -21,11 +21,9 @@ public class ConnectionBD {
 
     private void connect() throws SQLException {
         connection = DriverManager.getConnection("jdbc:sqlite:ServicemanBD.db");
-        System.out.println("База подключилась");
     }
 
     public static void disconnect() throws SQLException {
         connection.close();
-        System.out.println("База отключилась");
     }
 }
