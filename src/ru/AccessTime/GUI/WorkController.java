@@ -5,23 +5,23 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import ru.AccessTime.GUI.Controllers.ControllerNewServiceman;
-import ru.AccessTime.GUI.Controllers.ControllerOneWin;
-import ru.AccessTime.GUI.Controllers.ControllerSettingWin;
-import ru.AccessTime.GUI.Controllers.ControllerTwoWin;
+import ru.AccessTime.GUI.Controllers.*;
 import ru.AccessTime.WorkBD.WorkBase;
+import ru.AccessTime.WorkExcels.WorkExcel;
 
 import java.io.IOException;
 
 public class WorkController {
+
     public WorkBase workBase;
+    private WorkExcel workExcel;
 
     private ControllerOneWin controllerOneWin;
     private ControllerTwoWin controllerTwoWin;
     private ControllerSettingWin controllerSettingWin;
     private ControllerNewServiceman controllerNewServiceman;
+    private ControllerInf controllerInformation;
 
-    private SignalBG eSinalBG;
     private ShowTimeNow showTimeNow = new ShowTimeNow();
 
     private Stage stageTwoWin;
@@ -30,11 +30,13 @@ public class WorkController {
     private Parent rootSettingWin;
     private Stage stageNewServiceman;
     private Parent rootNewServiceman;
+    private Stage stageInforvation;
+    private Parent rootInforvation;
 
     public WorkController(ControllerOneWin controllerOneWin) {
         this.controllerOneWin = controllerOneWin;
         workBase = new WorkBase();
-
+        workExcel = new WorkExcel();
     }
 
 
@@ -62,28 +64,43 @@ public class WorkController {
     public ControllerNewServiceman getControllerNewServiceman() {
         return controllerNewServiceman;
     }
+    public WorkExcel getWorkExcel() {
+        return workExcel;
+    }
 
     public void showTwoWin () {
-        createTwoWin();
-        showTimeNow.startShowTime(controllerTwoWin.getTimeNowShow());
-        workBase.accountingHandler.newAccounting(controllerOneWin.getListOne(), workBase);
-        workBase.creatNewTableAccointing(workBase.accountingHandler.getNomberAccouting());
-        System.out.println(workBase.accountingHandler.getNomberAccouting());
+//        controllerOneWin.getTimeSignal().focusedProperty().addListener((arg0, oldValue, newValue) -> {
+//            if (!newValue) {
+//                if (!controllerOneWin.getTimeSignal().getText().matches("(0[0-9]|1[0-9]|2[0-4])(:[0-6][0-9]){0,1}")) {
+//                    controllerOneWin.getTimeSignal().setText("");
+//
+//                }
+//            }
+//        });
+
+            createTwoWin();
+            showTimeNow.startShowTime(controllerTwoWin.getTimeNowShow());
+            workBase.accountingHandler.setTimeSignalDate(controllerOneWin.getTimeSignalDate());
+            workBase.accountingHandler.newAccounting(controllerOneWin.getListOne(), workBase);
+            controllerTwoWin.setTimeSignalDate(controllerOneWin.getTimeSignalDate());
+
+            controllerTwoWin.lodingTableServicemanTW();
+
     }
     public void showSettingWin() {
         createSettingWin();
         showTimeNow.startShowTime(controllerSettingWin.getTimeNowShow());
-
-
-
-
     }
     public void showNewServiseman () {
         createNewServicemanWin();
         stageNewServiceman.show();
-
-
     }
+    public void showInformation () {
+        createInformationWin();
+        stageInforvation.show();
+    }
+
+
 
     public void createTwoWin() {
         stageTwoWin = new Stage();
@@ -114,8 +131,13 @@ public class WorkController {
         controllerSettingWin = loaderSettingWin.getController();
         controllerSettingWin.setWorkController(this);
         stageSettingWin.setTitle("Уточнение");
+        stageSettingWin.initModality(Modality.APPLICATION_MODAL);
         stageSettingWin.setScene(new Scene(rootSettingWin));
         stageSettingWin.setResizable(false);
+        stageSettingWin.setOnCloseRequest(event -> {
+            event.consume();
+            controllerSettingWin.exitSetting();
+        });
         stageSettingWin.show();
     }
     public void createNewServicemanWin() {
@@ -132,7 +154,24 @@ public class WorkController {
         stageNewServiceman.setTitle("Уточнение");
         stageNewServiceman.initModality(Modality.APPLICATION_MODAL);
         stageNewServiceman.setScene(new Scene(rootNewServiceman));
+
         stageNewServiceman.setResizable(false);
+    }
+    private void createInformationWin() {
+        stageInforvation = new Stage();
+        FXMLLoader loaderNewServiceManWin = new FXMLLoader();
+        loaderNewServiceManWin.setLocation(getClass().getResource("FXML/Information.fxml"));
+        try {
+            rootInforvation = loaderNewServiceManWin.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        controllerInformation = loaderNewServiceManWin.getController();
+        stageInforvation.setTitle("Уточнение");
+        stageInforvation.initModality(Modality.APPLICATION_MODAL);
+        stageInforvation.setScene(new Scene(rootInforvation));
+
+        stageInforvation.setResizable(false);
     }
 
 

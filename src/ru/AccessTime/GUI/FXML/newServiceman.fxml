@@ -31,12 +31,12 @@
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" GridPane.rowIndex="3" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия" GridPane.rowIndex="2" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Отчество" GridPane.rowIndex="4" />
-            <TextField fx:id="numberStateNewS" prefWidth="200.0" text="Введите порядковый номер" GridPane.columnIndex="1" />
-            <TextField fx:id="positionNewS" prefWidth="200.0" text="Введите Должность" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="surnameNewS" prefHeight="30.0" prefWidth="200.0" text="Введите Фамилию" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="nameNewS" prefHeight="30.0" prefWidth="200.0" text="Введите Имя" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField fx:id="patronymicNewS" prefHeight="30.0" prefWidth="200.0" text="Введите Отчество" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField fx:id="chPlus" prefHeight="30.0" prefWidth="200.0" text="Введите Время прибытия" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="numberStateNewS" prefWidth="200.0" promptText="Введите порядковый номер" GridPane.columnIndex="1" />
+            <TextField fx:id="positionNewS" prefWidth="200.0" promptText="Введите Должность" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="surnameNewS" prefHeight="30.0" prefWidth="200.0" promptText="Введите Фамилию" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="nameNewS" prefHeight="30.0" prefWidth="200.0" promptText="Введите Имя" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="patronymicNewS" prefHeight="30.0" prefWidth="200.0" promptText="Введите Отчество" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="chPlus" prefHeight="30.0" prefWidth="200.0" promptText="Введите Время прибытия" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Время прибытия" GridPane.rowIndex="5" />
             <Button fx:id="bSaveNewS" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Сохранить" GridPane.columnIndex="2" onAction="#creatNewServiceman">
                <GridPane.margin>

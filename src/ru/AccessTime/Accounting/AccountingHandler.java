@@ -7,24 +7,22 @@ import ru.AccessTime.Serviceman.Serviceman;
 import ru.AccessTime.WorkBD.WorkBase;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.TreeMap;
 
 public class AccountingHandler {
     public static ObservableList <Serviceman> servicemenList = FXCollections.observableArrayList();
+    public static ObservableList <Accounting> accountingList = FXCollections.observableArrayList();
+    private Integer nomberAccouting = 0;
+    private Double percents = 0.0;
+    private String timeSignalDate;
+    private SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.YYYY");
 
-    public static TreeMap <Integer, String > listAccounting = new TreeMap<>();
-    private Integer nomberAccouting = new Integer(0);
 
-    public void newAccounting (ListView<String > listOne, WorkBase workBase) {
-        Date date = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.YYYY");
-        Accounting accounting = new Accounting(date);
+    public void newAccounting (ListView<Accounting > listOne, WorkBase workBase) {
         nomberAccouting++;
-        System.out.println(nomberAccouting);
-        listAccounting.put(nomberAccouting,simpleDateFormat.format(accounting.getDateAccounting()));
-        listOne.getItems().add(simpleDateFormat.format(accounting.getDateAccounting()));
-        workBase.saveAction(nomberAccouting, simpleDateFormat.format(accounting.getDateAccounting()));
+        Accounting accounting = new Accounting();
+        accounting.setNomberAccouting(nomberAccouting);
+        accountingList.add(accounting);
+        workBase.saveAction(nomberAccouting, accounting.getDateAccounting(), percents, timeSignalDate);
 
     }
 
@@ -35,6 +33,13 @@ public class AccountingHandler {
         return nomberAccouting;
     }
 
+    public void setPercents(Double percents) {
+        this.percents = percents;
+    }
+
+    public void setTimeSignalDate(String timeSignalDate) {
+        this.timeSignalDate = timeSignalDate;
+    }
 
     public AccountingHandler() {
 

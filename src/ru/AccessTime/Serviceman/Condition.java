@@ -27,6 +27,14 @@ public enum Condition {
         }
         return null;
     }
+    public static String getByCodeString(String conditionCode) {
+        for (Condition g : Condition.values()) {
+            if (g.text.toLowerCase().contains(conditionCode.toLowerCase())) {
+                return g.code;
+            }
+        }
+        return null;
+    }
 
     @Override
     public String toString() {
