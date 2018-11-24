@@ -6,18 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java" description="    private ControllerSettingWin controllerSetting..." line="30" />
+    <bookmark url="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java" description="    private ControllerSettingWin controllerSetting..." line="28" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="427f4f1f-829b-49ac-9ea5-c991828957e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/__1_0_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_8_40_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerInf.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Dialogs/DialogManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/AccessTime/WorkExcels/WorkExcel.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/SignalBG.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServicemanBD.db" afterPath="$PROJECT_DIR$/ServicemanBD.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerOneWin.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerOneWin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerSettingWin.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/Controllers/ControllerSettingWin.class" />
@@ -26,26 +18,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/Main.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/WorkBD/WorkBase.class" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/WorkBD/WorkBase.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AccessTime.iml" afterPath="$PROJECT_DIR$/AccessTime.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/newServiceman.fxml" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/newServiceman.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/oneWin.fxml" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/oneWin.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/settingWin.fxml" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/settingWin.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/twoWin.fxml" afterPath="$PROJECT_DIR$/out/production/AccessTime/ru/AccessTime/GUI/FXML/twoWin.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/Accounting/Accounting.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/Accounting/Accounting.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/Accounting/AccountingHandler.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/Accounting/AccountingHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerNewServiceman.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerOneWin.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerOneWin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerSettingWin.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerSettingWin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerTwoWin.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/Controllers/ControllerTwoWin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/newServiceman.fxml" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/newServiceman.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/oneWin.fxml" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/oneWin.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/settingWin.fxml" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/settingWin.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/twoWin.fxml" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/twoWin.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/GUI/WorkController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/Main.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/Serviceman/Condition.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/Serviceman/Condition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/Serviceman/Serviceman.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/Serviceman/Serviceman.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/AccessTime/WorkBD/WorkBase.java" afterPath="$PROJECT_DIR$/src/ru/AccessTime/WorkBD/WorkBase.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +33,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -66,6 +42,19 @@
                 <element signature="e#358#359#0" expanded="true" />
                 <element signature="e#386#387#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Information.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/Information.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -356,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542557497127</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="24.11.2018 ver 2.0">
+      <created>1543078140124</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543078140124</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -456,7 +452,8 @@
     <MESSAGE value="16.11.2018 13.00" />
     <MESSAGE value="16.11.2018 17.00 version 2" />
     <MESSAGE value="18.11.2018 18.00 version 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="18.11.2018 18.00 version 2" />
+    <MESSAGE value="24.11.2018 ver 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.11.2018 ver 2.0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -732,7 +729,7 @@
         <state relative-caret-position="183">
           <caret line="12" column="99" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="99" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,17 +749,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/Information.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="183" lean-forward="true" selection-start-line="28" selection-start-column="183" selection-end-line="28" selection-end-column="183" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -819,9 +805,9 @@
         <state relative-caret-position="223">
           <caret line="144" column="8" lean-forward="false" selection-start-line="144" selection-start-column="8" selection-end-line="151" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2268#2269#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2046#2047#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
             <element signature="method#exitOneWin#0;class#ControllerOneWin#0" expanded="false" />
             <element signature="method#openAccountingWordExcel#0;class#ControllerOneWin#0" expanded="false" />
             <element signature="method#listAccounting#0;class#ControllerOneWin#0" expanded="false" />
@@ -835,10 +821,10 @@
         <state relative-caret-position="183">
           <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#WorkController#0;class#WorkController#0" expanded="false" />
-            <element signature="e#1856#1857#0" expanded="true" />
-            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1757#1758#0" expanded="true" />
+            <element signature="e#1800#1801#0" expanded="true" />
             <element signature="method#showSettingWin#0;class#WorkController#0" expanded="false" />
             <element signature="method#createTwoWin#0;class#WorkController#0" expanded="false" />
             <element signature="method#createSettingWin#0;class#WorkController#0" expanded="false" />
@@ -864,7 +850,7 @@
         <state relative-caret-position="314">
           <caret line="101" column="39" lean-forward="false" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
           <folding>
-            <marker date="1543077308212" expanded="true" signature="6024:6720" ph="..." />
+            <marker date="1543078136088" expanded="true" signature="5658:6354" ph="..." />
           </folding>
         </state>
       </provider>
@@ -874,12 +860,12 @@
         <state relative-caret-position="192">
           <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#exitSetting#0;class#ControllerSettingWin#0" expanded="false" />
             <element signature="method#loadingTableServiceman#0;class#ControllerSettingWin#0" expanded="false" />
             <element signature="method#comboBoxTableCell#0;class#ControllerSettingWin#0" expanded="false" />
             <element signature="method#updateNameServiceman#0;class#ControllerSettingWin#0" expanded="false" />
-            <element signature="e#7049#7061#0" expanded="true" />
+            <element signature="e#7005#7017#0" expanded="true" />
             <element signature="method#deleteServiceman#0;class#ControllerSettingWin#0" expanded="false" />
             <element signature="method#setupClearButtonField#0;class#ControllerSettingWin#0" expanded="false" />
           </folding>
@@ -905,7 +891,7 @@
         <state relative-caret-position="312">
           <caret line="98" column="96" lean-forward="false" selection-start-line="98" selection-start-column="96" selection-end-line="98" selection-end-column="96" />
           <folding>
-            <marker date="1543077604940" expanded="true" signature="5557:5988" ph="..." />
+            <marker date="1543078136002" expanded="true" signature="5306:5737" ph="..." />
           </folding>
         </state>
       </provider>
@@ -918,36 +904,36 @@
         <state relative-caret-position="172">
           <caret line="91" column="37" lean-forward="true" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
           <folding>
-            <marker date="1543078099702" expanded="true" signature="1488:1515" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="1488:1535" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="1488:2097" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="1488:2217" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="1488:6005" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="1488:6013" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="1653:1794" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="1682:1763" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="1931:2076" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="1960:2054" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="2120:2203" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="2268:5990" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="2288:5976" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="2344:4662" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="2370:4642" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="2458:3441" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="2488:3281" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="3316:3410" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="3502:4615" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="3534:4433" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="3626:3952" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="3667:3800" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="4055:4400" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="4096:4229" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="4468:4589" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="4756:5955" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="4782:5805" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="5663:5778" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="5698:5769" ph="..." />
-            <marker date="1543078099702" expanded="true" signature="5830:5935" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1279:1306" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1279:1326" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1279:1888" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1279:2008" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1279:5796" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1279:5804" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1444:1585" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1473:1554" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1722:1867" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1751:1845" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="1911:1994" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="2059:5781" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="2079:5767" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="2135:4453" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="2161:4433" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="2249:3232" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="2279:3072" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="3107:3201" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="3293:4406" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="3325:4224" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="3417:3743" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="3458:3591" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="3846:4191" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="3887:4020" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="4259:4380" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="4547:5746" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="4573:5596" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="5454:5569" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="5489:5560" ph="..." />
+            <marker date="1543078135915" expanded="true" signature="5621:5726" ph="..." />
           </folding>
         </state>
       </provider>
@@ -968,6 +954,17 @@
             <element signature="e#358#359#0" expanded="true" />
             <element signature="e#386#387#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/AccessTime/GUI/FXML/Information.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
