@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.AccessTime.GUI.Controllers.ControllerTwoWin">
+<?import javafx.scene.text.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.AccessTime.GUI.Controllers.ControllerTwoWin">
    <children>
       <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
          <children>
@@ -15,26 +12,35 @@
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" top="10.0" />
                </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
             </Text>
-            <Text fx:id="timeSignal" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
+            <Text fx:id="timeSignal" strokeType="OUTSIDE" strokeWidth="0.0">
                <HBox.margin>
-                  <Insets bottom="10.0" right="10.0" top="10.0" />
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
             </Text>
          </children>
          <VBox.margin>
             <Insets left="10.0" right="10.0" top="10.0" />
          </VBox.margin>
       </HBox>
-      <HBox prefHeight="376.0" prefWidth="600.0">
+      <HBox prefHeight="650.0" prefWidth="1000.0">
          <children>
-            <VBox prefHeight="322.0" prefWidth="472.0">
+            <VBox prefHeight="600.0" prefWidth="850.0">
                <children>
-                  <TableView fx:id="tableTwo" prefHeight="341.0" prefWidth="461.0">
+                  <TableView fx:id="tableTwo" prefHeight="613.0" prefWidth="840.0">
                     <columns>
-                      <TableColumn fx:id="numberPP" prefWidth="54.0" text="№ п/п" />
-                      <TableColumn fx:id="FIO" prefWidth="261.0" text="ФИО" />
-                        <TableColumn fx:id="timeArrival" prefWidth="145.0" text="Время прибытия" />
+                        <TableColumn fx:id="numberPPTW" maxWidth="80.0" minWidth="80.0" text="№ п/п" />
+                        <TableColumn fx:id="positionTW" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Должность" />
+                        <TableColumn fx:id="surnameTW" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Фамилия" />
+                        <TableColumn fx:id="nameTW" maxWidth="175.0" minWidth="175.0" prefWidth="175.0" text="Имя" />
+                        <TableColumn fx:id="patronymicTW" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Отчество" />
+                        <TableColumn fx:id="timeArrival" maxWidth="134.0" minWidth="134.0" prefWidth="134.0" text="Время прибытия" />
                     </columns>
                      <VBox.margin>
                         <Insets bottom="10.0" left="10.0" top="10.0" />
@@ -46,21 +52,33 @@
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
                         </Text>
                         <Text fx:id="timeNowShow" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
                         </Text>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Процент прибытия:">
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
                         </Text>
                         <Text fx:id="percents" strokeType="OUTSIDE" strokeWidth="0.0" text="Процент">
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
                         </Text>
                      </children>
                      <VBox.margin>
@@ -71,11 +89,14 @@
             </VBox>
             <VBox alignment="TOP_CENTER" prefHeight="370.0" prefWidth="146.0" spacing="10.0">
                <children>
-                  <TextField fx:id="numberState" prefHeight="0.0" prefWidth="119.0" text="Введите номер" />
-                  <Button fx:id="bClik" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Отметить" textAlignment="CENTER" />
-                  <Button fx:id="bPrint" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Печать" textAlignment="CENTER" />
-                  <Pane prefHeight="200.0" prefWidth="200.0" />
-                  <Button fx:id="bExitTwoWin" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Выход" textAlignment="CENTER" onAction="#exitTwoWin"/>
+                  <TextField fx:id="tfNumberState" prefHeight="0.0" prefWidth="120.0" promptText="Введите номер" />
+                  <Button fx:id="bClik" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addTableNewAccounting" prefHeight="30.0" prefWidth="120.0" text="Отметить" textAlignment="CENTER" />
+                  <Button fx:id="bPrint" contentDisplay="CENTER" mnemonicParsing="false" onAction="#printExcel" prefHeight="30.0" prefWidth="120.0" text="Печать" textAlignment="CENTER" />
+                  <Pane prefHeight="495.0" prefWidth="126.0" />
+                  <Button fx:id="bExitTwoWin" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitTwoWin" prefHeight="30.0" prefWidth="120.0" text="Выход" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></Button>
                </children>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

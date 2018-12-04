@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.AccessTime.GUI.Controllers.ControllerSettingWin">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.AccessTime.GUI.Controllers.ControllerSettingWin">
    <children>
       <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
          <children>
@@ -16,35 +19,41 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
             </Text>
-            <Text fx:id="dateUpdateShow" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата">
+            <Pane prefHeight="40.0" prefWidth="104.0">
+               <children>
+                  <Text fx:id="dateUpdateShow" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00.00.0000" wrappingWidth="80.4453125" />
+               </children>
+            </Pane>
+            <CustomTextField fx:id="ctfIntLastname" prefHeight="30.0" prefWidth="555.0" promptText="Введите Фамилию">
                <HBox.margin>
-                  <Insets bottom="10.0" right="10.0" top="10.0" />
+                  <Insets left="10.0" top="5.0" />
                </HBox.margin>
-            </Text>
+            </CustomTextField>
+            <Button fx:id="btnFind" mnemonicParsing="false" onAction="#findServiceman" prefHeight="30.0" prefWidth="103.0" text="Найти">
+               <HBox.margin>
+                  <Insets left="18.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
          </children>
          <VBox.margin>
             <Insets left="10.0" right="10.0" top="10.0" />
          </VBox.margin>
       </HBox>
-      <HBox prefHeight="376.0" prefWidth="600.0">
+      <HBox prefHeight="650.0" prefWidth="1000.0">
          <children>
-            <VBox prefHeight="322.0" prefWidth="472.0">
+            <VBox prefHeight="650.0" prefWidth="900.0">
                <children>
-                  <TableView fx:id="tableSetting" prefHeight="341.0" prefWidth="461.0">
+                  <TableView fx:id="tableSetting" prefHeight="653.0" prefWidth="867.0">
                     <columns>
-                      <TableColumn fx:id="tableSettingPP" prefWidth="54.0" text="№ п/п" />
-                      <TableColumn fx:id="settingFIO" prefWidth="261.0" text="ФИО" />
-                        <TableColumn fx:id="settingCondition" prefWidth="145.0" text="Состояние">
-                           <contextMenu>
-                              <ContextMenu>
-                                <items>
-                                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                </items>
-                              </ContextMenu>
-                           </contextMenu></TableColumn>
+                        <TableColumn fx:id="tableSettingPP" maxWidth="80.0" minWidth="80.0" text="№ п/п" />
+                        <TableColumn fx:id="settingPosition" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Должность" />
+                        <TableColumn fx:id="settingSurname" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Фамилия" />
+                        <TableColumn fx:id="settingName" maxWidth="175.0" minWidth="175.0" prefWidth="175.0" text="Имя" />
+                        <TableColumn fx:id="settingPatronymic" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Отчество" />
+                        <TableColumn fx:id="settingCondition" maxWidth="161.0" minWidth="161.0" prefWidth="161.0" text="Состояние" />
                     </columns>
                      <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                        <Insets left="10.0" top="10.0" />
                      </VBox.margin>
                   </TableView>
                   <HBox prefHeight="45.0" prefWidth="600.0">
@@ -54,7 +63,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
                         </Text>
-                        <Text fx:id="dateNow" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
+                        <Text fx:id="timeNowShow" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
@@ -68,10 +77,14 @@
             </VBox>
             <VBox alignment="TOP_CENTER" prefHeight="370.0" prefWidth="146.0" spacing="10.0">
                <children>
-                  <Button fx:id="bSaveSetting" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Сохранить" textAlignment="CENTER" />
-                  <Button fx:id="bNewServicemanWin" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="В/служащие" textAlignment="CENTER" onAction="#newServicemanWin" />
-                  <Pane prefHeight="200.0" prefWidth="200.0" />
-                  <Button fx:id="bExitSettingWin" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Выход" textAlignment="CENTER" onAction="#exitSetting"/>
+                  <Button fx:id="bSaveSetting" contentDisplay="CENTER" mnemonicParsing="false" onAction="#saveNewServicemanList" prefHeight="30.0" prefWidth="107.0" text="Сохранить" textAlignment="CENTER" />
+                  <Button fx:id="bNewServicemanWin" contentDisplay="CENTER" mnemonicParsing="false" onAction="#newServicemanWin" prefHeight="30.0" prefWidth="107.0" text="Добавить" textAlignment="CENTER" />
+                  <Button fx:id="btnDeletServiceman" contentDisplay="CENTER" mnemonicParsing="false" onAction="#deleteServiceman" prefHeight="30.0" prefWidth="107.0" text="Удалить" textAlignment="CENTER" />
+                  <Pane prefHeight="521.0" prefWidth="103.0" />
+                  <Button fx:id="bExitSettingWin" contentDisplay="CENTER" mnemonicParsing="false" onAction="#exitSetting" prefHeight="30.0" prefWidth="107.0" text="Выход" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></Button>
                </children>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
